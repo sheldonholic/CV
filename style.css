@@ -1,0 +1,115 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    background-color: black;
+    margin: 0;
+  color: white;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding:10px 20px 10px 20px;
+    background-image: linear-gradient(90deg , rgb(207, 55, 55),rgb(224, 101, 194),rgb(207, 55, 55));
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1vh;
+    display: inline;
+  }
+  ul{
+    list-style-type: none;
+    text-decoration: none;
+  }
+li{
+    color: white;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+}
+.nav-link{
+  color: white;
+  text-decoration: none;
+}
+.nav-link:hover{
+  color:black;
+}
+
+#welcome-section{
+  height: 100vh;
+
+}
+.curved-div {
+  background-image: linear-gradient(75deg , rgb(207, 55, 55),rgb(224, 101, 194),rgb(207, 55, 55));
+  color: white;
+  text-align: center;
+  
+}
+.curved-div h1 {
+  font-size:6vw;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 0px;
+  padding-top: 150px;
+}
+.curved-div p {
+  font-size: 2vw;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.curved-div svg {
+  display: block;
+}
+.project-tile {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  grid-row-gap: 0vh;
+  grid-area: span;
+}
+#grid-item{
+  margin: auto;
+  height: fit-content;
+  margin-bottom: 10px;
+  /*box-shadow: 10px 10px 20px rgb(65, 63, 63);*/
+  padding: 5vw;
+  padding-top: 5vw;
+  text-align: center;
+}
+#grid-item:hover{
+  transform: scale(1.1);
+}
+#grid-item h3{
+  font-size: 1rem;
+}
+#grid-item img{
+  width:9rem;
+  height: 8rem;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px rgb(65, 63, 63);
+}
+
+@media screen and (max-width:600px){
+  .project-tile{
+    display: block;
+  }
+}
+#connect svg{
+  display: block;
+}
+#profiles{
+  display: block;
+  background-color: rgb(207, 55, 55);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+#profiles img{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#profiles img:hover{
+  transform: scale(1.5);
+  
+}
